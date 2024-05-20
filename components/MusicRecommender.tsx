@@ -1,5 +1,5 @@
 
-"use client"; // This marks the component as a Client Component
+"use client"; 
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -16,7 +16,7 @@ const MusicRecommender: React.FC = () => {
   const [recommendations, setRecommendations] = useState<SongDetail[]>([]);
 
   const getRecommendations = async () => {
-    const baseUrl = 'http://127.0.0.1:8000/api/recommend/';
+    const baseUrl = 'http://52.204.126.181:8000/api/recommend/';
     const params = { song, artist };
     
     try {
